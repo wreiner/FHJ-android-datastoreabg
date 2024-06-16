@@ -28,6 +28,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.datastoreabg.ui.theme.DataStoreAbgTheme
@@ -77,7 +78,7 @@ fun MyApp() {
         TextField(value = nameInput,
             onValueChange = { nameInput = it },
             label = {
-                Text(text = "Name")
+                Text(text = stringResource(R.string.input_name))
             },
             modifier = Modifier.fillMaxWidth()
         )
@@ -87,7 +88,7 @@ fun MyApp() {
         TextField(value = emailInput,
             onValueChange = { emailInput = it },
             label = {
-                Text(text = "Email")
+                Text(text = stringResource(R.string.input_email))
             },
             modifier = Modifier.fillMaxWidth()
         )
@@ -105,7 +106,7 @@ fun MyApp() {
                     SettingsDataStore.saveEmail(context, emailInput)
                 }
             }) {
-                Text("SAVE")
+                Text(stringResource(R.string.button_save))
             }
 
             Button(onClick = {
@@ -114,14 +115,14 @@ fun MyApp() {
                     emailInput = SettingsDataStore.getEmailFlow(context).first()
                 }
             }) {
-                Text("RETRIEVE")
+                Text(stringResource(R.string.button_retrieve))
             }
 
             Button(onClick = {
                 nameInput = ""
                 emailInput = ""
             }) {
-                Text("CLEAR")
+                Text(stringResource(R.string.button_clear))
             }
         }
     }

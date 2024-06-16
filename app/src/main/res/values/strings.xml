@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DataStoreAbg</string>
+    <string name="button_save">SAVE</string>
+    <string name="button_retrieve">RETRIEVE</string>
+    <string name="button_clear">CLEAR</string>
+    <string name="input_name">Name</string>
+    <string name="input_email">Email</string>
 </resources>

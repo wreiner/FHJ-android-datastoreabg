@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DataStoreAbg</string>
+    <string name="button_save">Speichern</string>
+    <string name="button_retrieve">Lesen</string>
+    <string name="button_clear">Felder leeren</string>
+    <string name="input_name">Name</string>
+    <string name="input_email">E-Mail</string>
+</resources>
